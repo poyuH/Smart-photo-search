@@ -8,7 +8,7 @@ var apigClient = apigClientFactory.newClient();
 
 
 $("#search-form").on("submit", () => {
-    var params = {"q": $("#q").val()}
+    var params = {"q": $("#transcript").val()}
     var additionalParams = {}
     var body = ""
     apigClient.searchGet(params, body, additionalParams)

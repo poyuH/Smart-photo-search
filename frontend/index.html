@@ -9,10 +9,6 @@
 
   <!-- CSS -->
 	<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700">
-	<!--
-     <link rel="stylesheet" type="text/css" href="doorlock.css">
-    -->
-
   <!-- for API gateway SDK -->
   <script type="text/javascript" src="lib/axios/dist/axios.standalone.js"></script>
   <script type="text/javascript" src="lib/CryptoJS/rollups/hmac-sha256.js"></script>
@@ -26,14 +22,23 @@
   <script type="text/javascript" src="lib/apiGatewayCore/utils.js"></script>
   <script type="text/javascript" src="apigClient.js"></script>
 
+  <!-- Font awsome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
+
 </head>
 
 <body>
 	<div class="panel" id="panel">
         <h3> Search </h3>
   		<form action="#0" id="search-form">
-            <input type="text" id="q" name="q" placeholder="input search query">
+            <input type="text" id="transcript" name="transcript" placeholder="input search query">
             <input type="submit" value="Search">
+            <button id="start-button" title="Start Transcription">
+                <i id="recording" class="fa fa-microphone"></i> Start recording
+            </button>
+            <button id="stop-button"  title="Stop Transcription" disabled="true"><i
+                    class="fa fa-stop-circle"></i> Stop recording
+            </button>
   		</form>
         <ol id="result-list"></ol>
     </div>
@@ -47,6 +52,7 @@
 	</div>
   <!-- Interactive Javascript file -->
   <script type="text/javascript" src="index.js"></script>
+  <script src="transcribe/main.js"></script>
   
 </body>
 
