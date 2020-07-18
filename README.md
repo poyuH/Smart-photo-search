@@ -4,15 +4,17 @@ This project is an implementation of a photo album web application which allows 
 
 # Demonstration
 
-[put the gif here]
+![search function and audio input](https://github.com/poyuH/Smart-photo-search/blob/master/search%20function%20and%20audio%20input.gif)
 
 Before any user uploads their own photos, we stored into the database thousands of images that belong to one or perhaps multiple labels that can be recognized by Amazon Rekognition. Then we input query like "dogs", "show me dogs" or "show me photos with dogs and cats" by typing or speaking, and the webpage displayed the searching results and they are exactly what we want. 
+
+![upload function](https://github.com/poyuH/Smart-photo-search/blob/master/upload%20function.gif)
 
 Next, to show that the photos uploaded by users to the website are indeed stored in the databases and are assigned with correct labels. We first search for "horse" and confirmed that there's no picture of a horse already existed, and then we upload a horse's image through the interface of the website and do the searching again. This time the website returns the one picture that we just uploaded, it's "the" picture of a horse and it's perfectly-identified as a horse.
 
 # System Architecture
 
-[put the system architecture here]
+![system architecture](https://github.com/poyuH/Smart-photo-search/blob/master/structure.PNG)
 
 ## ElasticSearch
 Elasticsearch is a distributed, RESTful search and analytics engine that centrally stores data so the users can search, index, and analyze data of all shapes and sizes.
